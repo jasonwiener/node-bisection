@@ -21,6 +21,7 @@ Require `bisection`:
 ```js
 var bisect = require('bisection');
 ```
+You're ready to start using `bisection`.
 
 ### In a Mozilla Firefox add-on project.
 
@@ -29,6 +30,18 @@ follows that you've included bisection.js in the content folder of the add-ons f
 
 ```html
 <script type="application/x-javascript" src="chrome://PROJECT_NAME/content/bisection.js"/>
+```
+Instantiate the object to a variable by:
+
+```js
+var bisect = new bisection();
+```
+
+Then, simply call the `bisection` function you want to use. e.g. To find the index where this
+item should go in the list, do:
+
+```js
+bisect.bisect(an_array, an_item);
 ```
 
 ### In a web page
@@ -39,29 +52,21 @@ in the same folder as this page.
 ```html
 <script type="text/javascript" src="bisection.js" ></script>
 ```
-
-In node.js projects, you're ready to start using `bisection`.
-
-In other project instantiate the object to a variable by:
+Instantiate the object to a variable by:
 
 ```js
 var bisect = new bisection();
 ```
-Then, simply call the `bisection` function you want to use.
 
-To find the index where this item should go in the list, do:
+Then, simply call the `bisection` function you want to use. e.g. To find the index where this
+item should go in the list, do:
+
 ```js
 bisect.bisect(an_array, an_item);
 ```
-
-To insert an item in place, do:
-```js
-bisect.insort(an_array, an_item);
-```
-
 ## Short recipes
 
-### node.js projects. - Bisect an array.
+### node.js projects.
 
 ```js
 var bisect = require('bisection');
@@ -72,11 +77,11 @@ console.log('bisect.bisect_left: ' + bisect.bisect_left(an_array, 5));
 
 outputs:
 ```
-bisect.bisect: 5
+bisect.bisect: 5\n
 bisect.bisect_left: 4
 ```
 
-### Non-node.js projects. - Bisect an array.
+### Non-node.js projects.
 
 ```js
 var bisect = new bisection();
@@ -87,7 +92,7 @@ console.log('bisect.bisect_left: ' + bisect.bisect_left(an_array, 5));
 
 outputs:
 ```
-bisect.bisect: 5
+bisect.bisect: 5\n
 bisect.bisect_left: 4
 ```
 
