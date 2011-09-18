@@ -33,7 +33,8 @@ etc. Each result below reflects the FASTEST time returned after 10 runs of the t
 insort_left test took 41ms;
 insort_right test took 40ms;
 bisect_left test took 24ms;
-bisect_right test took 20ms;```
+bisect_right test took 20ms;
+```
 
 ####python 2.5.2 - 100000x
 ```js
