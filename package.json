@@ -1,11 +1,17 @@
 {
   "name": "bisection"
-, "version": "0.0.2"
-, "author": "Arnout Kazemier"
-, "description": "A JavaScript port of the bisection algorithm that is used in Python"
+, "version": "0.0.3"
+, "author": "Jason Wiener"
+, "description": "A JavaScript port of the Python 8.5. bisect - Array bisection algorithm : This module provides support for maintaining a list in sorted order without having to sort the list after each insertion. For long lists of items with expensive comparison operations, this can be an improvement over the more common approach. The module is called bisect because it uses a basic bisection algorithm to do its work. The source code may be most useful as a working example of the algorithm (the boundary conditions are already right!)."
 , "main": "index"
 , "keywords":[
     "algorithm"
+  , "bisect"
+  , "bisect_left"
+  , "bisect_right"
+  , "insort"
+  , "insort_left"
+  , "insort_right"
   , "bisection"
   , "python"
   ]
@@ -13,16 +19,16 @@
     "lib": "./lib"
   }
 , "maintainers": [{
-    "name":"Arnout Kazemier"
-  , "email":"info@3rd-Eden.com"
-  , "web":"http://www.3rd-Eden.com"
+    "name":"Jason Wiener"
+  , "email":"hiya@jasonwiener.com"
+  , "web":"http://www.jasonwiener.com"
   }]
 , "licenses": [{
     "type": "MIT"
-  , "url": "http://github.com/3rd-Eden/node-bisection/blob/master/LICENSE"
+  , "url": "http://github.com/jasonwiener/node-bisection/blob/master/LICENSE"
   }]
 , "repositories": [{
     "type": "git"
-  , "url" : "http://github.com/3rd-Eden/node-bisection.git"
+  , "url" : "http://github.com/jasonwiener/node-bisection.git"
   }]
 }
