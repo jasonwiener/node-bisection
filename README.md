@@ -29,17 +29,17 @@ etc. Each result below reflects the FASTEST time returned after 10 runs of the t
 
 ###The results:
 ####node.js - 100000x
-insort_left test took 41ms
-insort_right test took 40ms
-bisect_left test took 24ms
-bisect_right test took 20ms
+```insort_left test took 41ms;
+insort_right test took 40ms;
+bisect_left test took 24ms;
+bisect_right test took 20ms;```
 
 ####python 2.5.2 - 100000x
-insort_left test took 110.000ms
-insort_right test took 110.000ms
-bisect_left test took 100.000ms
-bisect_right test took 100.000ms
-
+```insort_left test took 110.000ms;
+insort_right test took 110.000ms;
+bisect_left test took 100.000ms;
+bisect_right test took 100.000ms;
+```
 
 ## How to use
 
