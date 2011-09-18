@@ -12,6 +12,35 @@ working example of the algorithm (the boundary conditions are already right!)."
 This project is not limited to use in node.js. It's excellent for any JavaScript project. Also 
 included in the repo is a YUI-minified version of the code that's pretty-wicked @ only 527 bytes!
 
+## Interesting Benchmarks
+This being my first port of Python to a primarily node.js object, I wanted to see if the hype was
+well-deserved. I ran identical tests against node-bisection and Python.  node-bistection ran >2x
+faster of node.js for insort functions and >4x faster on bisect operations. I definitely must 
+admit being heavily impressed. I use bisect a TON in projects and seeing the performance 
+differences has made me want to explore node.js more as well as v8.
+
+The test data. I ran identical timed loop operations (looping
+100000x) over a function where a master array (living outside the loop)
+is duplicated using the fastest method possible to my knowledge. On
+node.js I used .splice(0) and in Python I used [:].  Then I used the
+copied list against each of the functions 1 at a time. First testing
+insort_left 100000x, and recording the time, then insort_right, recording,
+etc. Each result below reflects the FASTEST time returned after 10 runs of the test.
+
+###The results:
+####node.js - 100000x
+insort_left test took 41ms
+insort_right test took 40ms
+bisect_left test took 24ms
+bisect_right test took 20ms
+
+####python 2.5.2 - 100000x
+insort_left test took 110.000ms
+insort_right test took 110.000ms
+bisect_left test took 100.000ms
+bisect_right test took 100.000ms
+
+
 ## How to use
 
 ### in node.js
