@@ -21,7 +21,12 @@ Require `bisection`:
 ```js
 var bisect = require('bisection');
 ```
-You're ready to start using `bisection`.
+You're ready to start using `bisection`. Simply call the `bisection` function you want to use.
+e.g. To find the index where this item should go in the list, do:
+
+```js
+bisect.bisect(an_array, an_item);
+```
 
 ### In a Mozilla Firefox add-on project.
 
@@ -76,10 +81,7 @@ console.log('bisect.bisect_left: ' + bisect.bisect_left(an_array, 5));
 ```
 
 outputs:
-```
-bisect.bisect: 5\n
-bisect.bisect_left: 4
-```
+```bisect.bisect: 5``` and ```bisect.bisect_left: 4```
 
 ### Non-node.js projects.
 
@@ -91,10 +93,7 @@ console.log('bisect.bisect_left: ' + bisect.bisect_left(an_array, 5));
 ```
 
 outputs:
-```
-bisect.bisect: 5\n
-bisect.bisect_left: 4
-```
+```bisect.bisect: 5``` and ```bisect.bisect_left: 4```
 
 ## License 
 
